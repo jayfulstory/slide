@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>プロフィール・キムジェヒョン</title>
+    <style>
+        /* 리셋 CSS */
+        * {margin:0;padding:0;box-sizing:border-box;}
+        ul, li {list-style:none;}
+        
+        
+        .slidebox {max-width:700px;margin:0 auto;position:relative;}
+        .slidebox .slidelist {position:relative;white-space:nowrap;font-size:0;overflow:hidden;}
+        .slidebox .slidelist .slideitem {position:relative;display:inline-block;vertical-align:middle;background-color:#333333;width:100%;transition:all 1s;}
+        .slidebox .slidelist .slideitem > a {display:block;width:auto;position:relative;}
+        .slidebox .slidelist .slideitem > a img {max-width:100%;}
+        
+        .slidebox .slide-control [class*="control"] label {position:absolute;z-index:10;top:50%;transform:translateY(-50%);padding:20px;border-radius:50%;cursor:pointer;}
+        .slidebox .slide-control [class*="control"] label.prev {left:-50px;background:#333 url('left-arrow.png') center center / 50% no-repeat;}
+        .slidebox .slide-control [class*="control"] label.next {right:-50px;background:#333 url('right-arrow.png') center center / 50% no-repeat;}
+        
+        [name="slide"] {display:none;}
+        #slide01:checked ~ .slidelist .slideitem {left:0;}
+        #slide02:checked ~ .slidelist .slideitem {left:-100%;}
+        #slide03:checked ~ .slidelist .slideitem {left:-200%;}
+        #slide04:checked ~ .slidelist .slideitem {left:-300%;}
+        
+        .slide-control [class*="control"] {display:none;}
+        #slide01:checked ~ .slide-control .control01 {display:block;}
+        #slide02:checked ~ .slide-control .control02 {display:block;}
+        #slide03:checked ~ .slide-control .control03 {display:block;}
+        #slide04:checked ~ .slide-control .control04 {display:block;}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>プロフィール</h1>
+            <img id="me" src="img006.jpeg" alt="me">
+            <h2>名前</h2>
+            <p>キム　ジェヒョン</p>
+
+            <h2>趣味みたいなものは？</h2>
+            <p>レザークラフトが好きで週末にはフリーマーケットに出たりもした</p>
+            <div class="slidebox">
+                <input type="radio" name="slide" id="slide01" checked>
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
+                <input type="radio" name="slide" id="slide04">
+                <ul class="slidelist">
+                    <li class="slideitem">
+                        <a><img src="slide01.jpeg"></a>
+                    </li>
+                    <li class="slideitem">
+                        <a><img src="slide02.jpeg"></a>
+                    </li>
+                    <li class="slideitem">
+                        <a><img src="slide03.jpeg"></a>
+                    </li>
+                    <li class="slideitem">
+                        <a><img src="slide04.jpeg"></a>
+                    </li>
+                    
+                </ul>
+                <div class="slide-control">
+                    <div class="control01">
+                        <label for="slide04" class="prev"></label>
+                        <label for="slide02" class="next"></label>
+                    </div>
+                    <div class="control02">
+                        <label for="slide01" class="prev"></label>
+                        <label for="slide03" class="next"></label>
+                    </div>
+                    <div class="control03">
+                        <label for="slide02" class="prev"></label>
+                        <label for="slide04" class="next"></label>
+                    </div>
+                    <div class="control04">
+                        <label for="slide03" class="prev"></label>
+                        <label for="slide01" class="next"></label>
+                    </div>
+                </div>
+            </div>
+            <h2>長所みたいなのはどんなところ？</h2>
+            <p>とりあえずやってみる</p>
+
+            <h2>ちょこっとだけ自慢できることは？</h2>
+            <p>すごく楽しい旅をしたことがある</p>
+            <video controls poster="video1.jpeg">
+                <source src="trip.mp4" type="video/mp4">
+                </video>
+            <h2>最近ちょこっとハマっているものは？</h2>
+            <p>ジャンボコーンと芋けんぴ</p>
+
+            <h2>最近ものすごく美味い！と思ったのはなに？</h2>
+            <p>ピーナッツかりんとう</p>
+            <img src="img003.jpeg" art="karintou">
+            
+            <h2>大大大好きな食べ物は？</h2>
+            <p>トンカツとチキン</p>
+
+            <h2>ちょっと嫌いな食べ物は？</h2>
+            <p>ホルモン。食感がいや、、</p>
+
+            <h2>まず家に帰ってすることはなに？</h2>
+            <p>靴下をぬぐ</p>
+
+            <h2>その次にすることは？</h2>
+            <p>服をぬぐ</p>
+
+            <h2>平均睡眠時間は？</h2>
+            <p>６時間</p>
+
+            <h2>朝、出かける何時間前に起きる？</h2>
+            <p>２時間15分前</p>
+
+            <h2>口癖は？</h2>
+            <p>何食べた？</p>
+
+            <h2>何フェチ？</h2>
+            <p>特にないけど、強いて言うならフェチって思うほどお菓子が好き</p>
+            <img src="img004.jpeg" alt="okasi">
+            <div class="br">（これが一回分）</div>
+
+            <h2>ロト6で80万当たったら！？</h2>
+            <p>貯金</p>
+
+            <h2>えらそうな座右の銘は？</h2>
+            <p>やりたいことをやって生きる</p>
+
+            <h2>18年後なにしてる？</h2>
+            <p>またどっかの違う国で住めるように頑張っている</p>
+
+            <h2>とりあえず集めてるものは？</h2>
+            <p>傘（集めたくないのに多くなってる、、）</p>
+
+            <h2>体を流れている血の液体の型は？</h2>
+            <p>Oの型</p>
+
+            <h2>なんか前世はこんな人かな？</h2>
+            <p>怠け者</p>
+
+            <h2>ずばり！○○なタイプです！</h2>
+            <p>オシャレなオッドアイ</p>
+        </div>
+        <footer>
+            <img src="logo.png">
+        </footer>
+</body>
+</html>
