@@ -4,7 +4,7 @@ body {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
   margin: 0;
   margin-top: 80px;
-  background-image: url(../images/cactus5.jpg);
+  background-image: url(cactus5.jpg);
   background-repeat: repeat;
 }
 .wrapper img {
@@ -22,7 +22,7 @@ h1 {
   height: 180px;
   font-size: 45px;
   color: rgb(255, 244, 230);
-  background-image: url(../images/img001.jpeg);
+  background-image: url(img001.jpeg);
   background-size: cover;
   border-radius: 24px;
   margin-top: 15px;
